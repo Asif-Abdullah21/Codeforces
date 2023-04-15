@@ -25,10 +25,35 @@ int main()
 
         ans = (val*25) + s[1]-'a';
 
-        if(s[0]>s[1]) cout << ans+1<< endl;
+        if(s[1]<s[0]) cout << ans+1<< endl;
         else cout << ans << endl;
 
     }
+
+
+    /* 
+    #include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--) ///Legend Abu Sayeed Vai
+    {
+        string s;
+        cin>>s;
+        int ans=0;
+        int f=s[0]-'a';
+        ans+=(f*25);
+        ans+=(s[1]-'a')+1;
+        if(s[1]>s[0]) ans--;
+
+
+        cout<<ans<<endl;
+    }
+    return 0;
+}
+    */
     
 
     return 0;
