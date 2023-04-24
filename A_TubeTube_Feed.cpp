@@ -43,21 +43,21 @@ int main()
             }
         }
 
-        int mx = 0;
         if (f == 0)
             cout << -1 << endl;
         else
         {
-            mx = -1;
+            ll mx = -1,mx_i=-1;
             for (int i = 0; i < q; i++)
             {
-                if (a[i].first+i <= t && a[i].second > mx)
+                if (a[i].first+i <= t && a[i].second >= mx)
                 {
-                    mx = i + 1;
+                    mx = a[i].second;
+                    mx_i = i+1;
                 }
             }
 
-            cout << mx << endl;
+            cout << mx_i << endl;
         }
     }
 
