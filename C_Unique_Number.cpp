@@ -16,14 +16,31 @@ int main()
 
     while (t--)
     {
+        string str; /// code idea from Rifat vai's code ///
         int n;
-        if(n>10) cout << -1 << endl;
-        else if(n<10)
+        cin >> n;
+        if(n>45) cout << -1 << endl;
+        else
         {
-            for (int i = 1; i <= n; i++)
+            for (int i = 9; i > 0; i--)
             {
-                cout <<i ;
+                if(n-i>=0)
+                {
+                     n = n-i;
+                     str += (i+48);//i+48 kore songka ke abr string a conver kortesi
+                }
+
+                if(n==0)
+                {
+                    break;
+                }
             }
+
+            // if(n==0)
+            // {
+                reverse(str.begin(),str.end());
+                cout << str << endl;
+           // }
             
         }
     }
