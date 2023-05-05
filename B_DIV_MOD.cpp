@@ -28,7 +28,26 @@ using namespace std;
 int main()
 {
     int t;
-    t = 0%4;
-    cout << t << endl;
+    cin>>t;  // Logic + Expalanation from abid vai
+    while(t--)
+    {
+        ll l,r,a;
+        cin >> l >> r >> a;
+        ll x = l/a;
+        ll y = r/a;
+
+        if(x==y) cout << (r/a) + (r%a) << endl;
+        else
+        {
+             x = (r/a) + (r%a);
+             y = ((r/a)-1) + (a-1); // a-1 = highest mod value of a
+
+             ll ans = max(x,y);
+
+             cout << ans << endl;
+        }
+
+
+    }
     return 0;
 }
