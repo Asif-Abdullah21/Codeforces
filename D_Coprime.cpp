@@ -26,10 +26,39 @@ using namespace std;
 int main()
 {
     int t;
-    cin>>t;
+    cin>>t; //code explained by Abid_Ul_Islam brother
     while(t--)
     {
+        int n,x;
+        int cnt[1005] = {0};
+        cin >> n;
 
+        for (int i = 1; i <= n; i++)
+        {
+            cin >> x;
+
+            cnt[x] = max(cnt[x],i);// storing the max index where the value is
+        }
+
+        int ans = -1;
+        for (int i = 1; i <= 1000; i++)
+        {
+            if(cnt[i] != 0)
+            {
+                for (int j = 1; j <= 1000; j++)
+                {
+                    if(cnt[j] !=0 && __gcd(i,j)==1)
+                    {
+                        ans = max(ans,cnt[i]+cnt[j]);
+                    }
+                }
+                
+            }
+        }
+
+        cout << ans << endl;
+        
+        
     }
     return 0;
 }
