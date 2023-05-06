@@ -36,12 +36,17 @@ using namespace std;
 int main()
 {
     FIO;
-    int t;
+    int t; //code not completed yet
     cin >> t;
     while (t--)
     {
-        int n;
-        cin >> n;
+        ll n,m;
+        cin >> n >> m;
+
+       
+         if(n%3!=0) nn;
+        else if(m>(n/3)*2) nn;
+       
 
     }
     return 0;

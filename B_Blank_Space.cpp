@@ -35,14 +35,46 @@
 using namespace std;
 int main()
 {
-    FIO;
     int t;
     cin >> t;
+
     while (t--)
     {
-        int n;
+        int n, cnt = 0;
         cin >> n;
 
+        int a[n + 1];
+
+        for (int i = 0; i < n; i++)
+        {
+            cin >> a[i];
+            if (a[i] == 0)
+                cnt = 1;
+        }
+
+        if (cnt == 0)
+            cout << 0 << endl;
+        else
+        {
+            int temp = cnt;
+            int ans = cnt;
+            for (int i = 0; i < n - 1; i++)
+            {
+                if (a[i] == 0 && a[i + 1] == 0)
+                {
+                    cnt++;
+                    if (cnt >= ans)
+                        ans = cnt;
+                }
+                else
+                {
+                    cnt = temp;
+                }
+            }
+
+            cout << ans << endl;
+        }
     }
+
     return 0;
 }

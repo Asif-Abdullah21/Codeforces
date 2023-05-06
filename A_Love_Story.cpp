@@ -35,14 +35,25 @@
 using namespace std;
 int main()
 {
-    FIO;
     int t;
     cin >> t;
+
     while (t--)
     {
-        int n;
-        cin >> n;
+        string s;
+        cin >> s;
 
+        string str = "codeforces";
+        int cnt = 0;
+
+        for (int i = 0; i < sz(s); i++)
+        {
+            if (str[i] != s[i])
+                cnt++;
+        }
+
+        cout << cnt << endl;
     }
+
     return 0;
 }
