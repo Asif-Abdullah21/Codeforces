@@ -37,12 +37,12 @@ int main()
 {
     FIO;
     int t;
-    cin >> t; //modified the solution of live contest
+    cin >> t;
     while (t--)
     {
         ll n, cnt = 0, cnt1 = 0, cnt2 = 0;
         cin >> n;
-        ll x,mn1=2000000,mn2=2000000,mn3=2000000;
+        ll x,mn1=1e9,mn2=1e9,mn3=1e9;
         string str;
 
         while(n--)
@@ -74,12 +74,13 @@ int main()
             cout << -1 << endl;
         else
         {
-            if(mn3 <= mn1+mn2) cout << mn3 << endl;
+            if(mn3 < mn1+mn2) cout << mn3 << endl;
             else cout << mn1+mn2<< endl;
         }
     }
     return 0;
 }
+
 
 
 
