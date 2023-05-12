@@ -19,7 +19,11 @@ while(t--)
 
     for (int i = 1; i < sz(s)/2; i++)
     {
-        if(s[i]!=s[i-1]) f=1;
+        if(s[i]!=s[i-1])
+        {
+             f=1;
+             break;
+        }
     }
 
     if(f) cout << "YES\n";
