@@ -1,67 +1,64 @@
-// #include <bits/stdc++.h>
-// #define ll long long
-// #define pii pair<int, int>
-// #define sz(v) v.size()
-// #define mem(a, x) memset(a, x, sizeof(a))
-// #define fio                       \
-//     ios_base::sync_with_stdio(0); \
-//     cin.tie(0);                   \
-//     cout.tie(0)
-// using namespace std;
-// int main()
-// {
-//     fio;
-//     int t;
-//     cin >> t; // this is a wrong code
+#include <bits/stdc++.h>
+#define ll long long
+#define pii pair<int, int>
+#define sz(v) v.size()
+#define mem(a, x) memset(a, x, sizeof(a))
+#define fio                       \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(0);                   \
+    cout.tie(0)
+using namespace std;
+int main()
+{
+    fio;
+    int t;
+    cin >> t; 
 
-//     while (t--)
-//     {
-//         int n, k;
-//         cin >> n >> k;
+    while (t--)
+    {
+        int n, k;
+        cin >> n >> k;
 
-//         int a[n + 1];
-//         ll sum = 0;
-//         for (int i = 0; i < n; i++)
-//         {
-//             cin >> a[i];
-//             sum += a[i];
-//         }
+        int a[n + 1];
+        ll sum = 0;
+        for (int i = 0; i < n; i++)
+        {
+            cin >> a[i];
+            sum += a[i];
+        }
 
-//         sort(a, a + n);
+        sort(a, a + n);
+        int i,j;
 
-//         ll sum1 = 0, sum2 = 0;
+        for (i = 0,j=n-1; i < k; i++)
+        {
+            sum -= a[j];
+            j--;
+        }
+     
+        j++;
+        ll mx = sum;
+    
+        for (i = 0; i < n; i++)
+        {
+            k--;
+            sum -= a[i];
+            sum -=a[i+1];
+            i++;
+            sum += a[j];
+            j++;
+           
+            mx = max(mx,sum);
+            if(k==0) break;
+        }
 
-//         for (int i = 0, j = n - 1, l = n - 1; i < n - 1; i++)
-//         {
-//             if (a[i] + a[i + 1] < a[j])
-//             {
-//                 k--;
-//                 sum1 += (a[i] + a[i + 1]);
-//                 i++;
-//             }
-//             else
-//             {
-//                 k--;
-//                 sum1 += a[j];
-//                 j--;
-//             }
+       cout << mx << endl; 
+        
+    }
 
-//             sum2 += a[l];
-//             l--;
+    return 0;
+}
 
-//             if (k == 0)
-//                 break;
-//         }
-
-//         if (sum2 < sum1)
-//             sum -= sum2;
-//         else
-//             sum -= sum1;
-//         cout << sum << endl;
-//     }
-
-//     return 0;
-// }
 
 /*
 Sahinul islam vai:
