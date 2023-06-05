@@ -4,5 +4,6 @@
         "cmath": "cpp",
         "ostream": "cpp",
         "*.tcc": "cpp"
-    }
+    },
+    "cph.general.onceMaintainerMessage": false
 }
