@@ -37,8 +37,7 @@ int main()
                 ans = a[i];
         }
 
-        if (ans < 0)
-            cout << ans << endl;
+        if (ans < 0) cout << ans << endl;
         else
         {
             sort(a, a + n,greater<int>());
