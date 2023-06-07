@@ -25,7 +25,7 @@ int main()
     {
         int n;
         cin >> n;
-        ll sum = 0;   //explained by Coding Community | Newton School
+        ll sum = 0;    //explained by Coding Community | Newton School
         int a[n];
 
         for (int i = 0; i < n; i++)
