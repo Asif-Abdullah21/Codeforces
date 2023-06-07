@@ -50,8 +50,7 @@ int main()
         }
 
         if(cnt_0==n) cout << 0 << endl;
-
-       else cout <<sum+cnt << endl;
+        else cout <<sum+cnt << endl;
         
         
     }
