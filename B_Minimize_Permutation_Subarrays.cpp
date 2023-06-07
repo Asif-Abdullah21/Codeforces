@@ -22,7 +22,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n;
+        int n; 
         cin >> n;
         int a[n+1];
         int one_i =-1;
