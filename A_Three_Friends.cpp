@@ -30,9 +30,7 @@ int main()
             cin >> a[i];
         }
 
-        if (a[0] == a[1] && a[1] == a[2])
-            cout << 0 << endl;
-
+        if (a[0] == a[1] && a[1] == a[2]) cout << 0 << endl;
         else
         {
             sort(a, a + 3);
@@ -62,6 +60,41 @@ int main()
             else cout << sum << endl;
         }
     }
+
+    return 0;
+}
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+#define		pb              push_back
+#define		PB              pop_back
+#define		nn              "\n"
+#define		all(p)          p.begin(),p.end()
+#define		zz(v)           v.size()
+#define		ss              ' '
+#define 	S(a)            scanf("%lld",&a)
+#define 	SS(a,b)         scanf("%lld %lld",&a,&b)
+#define 	SSS(a,b,c)      scanf("%lld %lld %lld",&a,&b,&c)
+#define		gcd(a,b)        __gcd(a,b)
+#define		lcm(a,b)        (a*b)/gcd(a,b)
+#define		pi              acos(-1.0)
+typedef		long long       ll;
+typedef		vector<ll>      vll;
+
+
+int main()
+{
+   ll t,a,b,c;          // Rifat vai's code //
+   cin>>t;
+   while(t--)
+   {
+       cin>>a>>b>>c;
+       ll s=abs(a-b) + abs(a-c) + abs(c-b);
+       if(s>4) cout<<s-4<<nn;
+       else cout<<0<<nn;
+   }
 
     return 0;
 }
