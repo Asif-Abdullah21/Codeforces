@@ -21,7 +21,7 @@ int main()
 {
     FIO;
     int t;
-    cin >> t;
+    cin >> t; 
 
     while (t--)
     {
