@@ -3,7 +3,9 @@
         "iostream": "cpp",
         "cmath": "cpp",
         "ostream": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "random": "cpp",
+        "cstdlib": "cpp"
     },
     "cph.general.onceMaintainerMessage": false
 }
