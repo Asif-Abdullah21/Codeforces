@@ -19,7 +19,7 @@ int main()
 {
     FIO;
     int n;
-    cin >> n;
+    cin >> n; 
 
     while (n--)
     {
