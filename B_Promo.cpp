@@ -45,7 +45,6 @@ int main()
 
     // cout << endl;
     
-    
 
     while(q--){
         int x,y;
