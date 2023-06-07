@@ -23,7 +23,7 @@ int main()
 
     while (t--)
     {
-        int n, m;
+        int n, m; 
         cin >> n >> m;
         int a[n+2][m+2];
 
