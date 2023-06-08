@@ -40,7 +40,6 @@ int main()
         if(val%2==0) cout << s.size() << endl;
         else cout << s.size() - 1 << endl;
         
-        
     } 
 
     return 0;
