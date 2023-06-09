@@ -24,7 +24,7 @@ int main()
     while(t--)
     {
         int n;
-        cin>> n;
+        cin>> n; 
 
         set<int> s;
          
