@@ -29,7 +29,7 @@ int main()
             cout << n - 3 << " " << 2 << " "<< 1 << endl;
         else
         {
-            n = n-1;   //code of this else part is explained by muhammad_sayem
+            n = n-1;   
             m = n/2;
 
             if(m%2==0) cout << m+1 << " " << m-1 << " " << 1 << endl;
