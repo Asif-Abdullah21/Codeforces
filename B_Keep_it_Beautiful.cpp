@@ -19,56 +19,67 @@ int main()
 {
     FIO;
     int t;
-    cin >> t;
+    cin >> t;  //idea from algobot youtube channel
 
     while (t--)
     {
         FIO;
         int n;
         cin >> n;
-        vector<int> v(n);
 
+        vector<int> v(n);
         for (int i = 0; i < n; i++)
         {
             cin >> v[i];
         }
 
-        int cnt=1,f=0,indx=0;
+        vector<int> taken;
+        string s;
+        taken.push_back(v[0]);
+        s +='1';
+
+        bool brocken = false;
+        
         for (int i = 1; i < n; i++)
         {
-            if(v[i]<v[i-1])
+            if(brocken == false)
             {
-                f=1;
-                indx=i;
-                break;
+                if(v[i]>=taken.back())
+                {
+                    s += '1';
+                    taken.push_back(v[i]);
+                }
+                else{
+                    if(v[i]<=v[0]){
+                        s +='1';
+                        taken.push_back(v[i]);
+                        brocken = true;
+                    }
+                    
+                    else s +='0';
+                }
             }
-            else cnt++;
-        }
-
-        int last_val = v[indx];
-
-        for (int i = indx+1; i < n; i++)
-        {
-            if(last_val==v[i]){
-                 cnt++;
-                 indx = i;
+            else
+            {
+                if(v[i]<taken.back())
+                {
+                    s += '0';
+                }
+                else if(v[i]>v[0])
+                {
+                    s += '0';
+                }
+                else
+                {
+                    s +='1';
+                    taken.push_back(v[i]);
+                }
             }
-            else break;
-        }
 
-
-        for (int i = 0; i <= indx; i++)
-        {
-            cout << 1;
         }
+        
 
-        for (int i = indx+1; i < n; i++)
-        {
-            if(v[i]>v[0]) cout << 0;
-            else if(v[i]<last_val) cout << 0;
-            else cout << 1;
-        }
-        cout << endl;
+        cout << s << endl;
         
          
     }
