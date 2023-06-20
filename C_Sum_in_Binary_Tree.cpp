@@ -34,7 +34,7 @@ int main()
             sum += (n/2);
             n = n/2;
         }
-
+ 
         cout << sum << endl;
          
     }
