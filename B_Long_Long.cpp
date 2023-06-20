@@ -54,9 +54,8 @@ int main()
         if(cnt>0) mx++;
 
         cout << sum << " " << mx << endl;
-        
          
     }
-     
+    
     return 0;
 }
