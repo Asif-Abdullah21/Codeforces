@@ -5,7 +5,8 @@
         "ostream": "cpp",
         "*.tcc": "cpp",
         "random": "cpp",
-        "cstdlib": "cpp"
+        "cstdlib": "cpp",
+        "complex": "cpp"
     },
     "cph.general.onceMaintainerMessage": false
 }
