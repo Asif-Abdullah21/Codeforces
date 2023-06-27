@@ -6,7 +6,12 @@
         "*.tcc": "cpp",
         "random": "cpp",
         "cstdlib": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "array": "cpp",
+        "list": "cpp"
     },
     "cph.general.onceMaintainerMessage": false
 }
