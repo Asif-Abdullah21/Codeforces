@@ -25,13 +25,14 @@ int main()
     {
         ll a,b,c;
         cin >> a >> b >> c;
-        ll a1,b1,c1=pow(10,c-1);
-        a1 = c1;
-        b1 = c1;
+        ll a1=1,b1=1,c1=1;
 
-        while(to_string(a1).size()<a) a1 *= 2;
-        while(to_string(b1).size()<b) b1 *= 3;
-        
+        for(int i=0;i<a-1;i++) a1 = a1*10;
+        for(int i=0;i<b-1;i++) b1 = b1*10;
+        for(int i=0;i<c-1;i++) c1 = c1*10;
+
+        if(a1%b1==0) a1+=c1;
+        else if(b1%a1==0) b1+=c1;
 
         cout << a1 << " " << b1 << endl;
 
@@ -41,6 +42,7 @@ int main()
 }
 
 
+//-------------------------------------------------------
 
 
 // #include <bits/stdc++.h>
@@ -70,14 +72,13 @@ int main()
 //     {
 //         ll a,b,c;
 //         cin >> a >> b >> c;
-//         ll a1=1,b1=1,c1=1;
+//         ll a1,b1,c1=pow(10,c-1);
+//         a1 = c1;
+//         b1 = c1;
 
-//         for(int i=0;i<a-1;i++) a1 = a1*10;
-//         for(int i=0;i<b-1;i++) b1 = b1*10;
-//         for(int i=0;i<c-1;i++) c1 = c1*10;
-
-//         if(a1%b1==0) a1+=c1;
-//         else if(b1%a1==0) b1+=c1;
+//         while(to_string(a1).size()<a) a1 *= 2;
+//         while(to_string(b1).size()<b) b1 *= 3;
+        
 
 //         cout << a1 << " " << b1 << endl;
 
