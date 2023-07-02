@@ -31,7 +31,7 @@ int main()
         cnt[s[i] - 97]++;
     }
 
-    int flag = true;
+    bool flag = true;
 
     for (int i = 0; i < 26; i++)
     {
