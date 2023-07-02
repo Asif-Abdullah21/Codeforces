@@ -11,7 +11,12 @@
         "string": "cpp",
         "vector": "cpp",
         "array": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp"
     },
     "cph.general.onceMaintainerMessage": false
 }
