@@ -53,7 +53,7 @@ int main()
         {
             sum += a[i];
         }
-
+  
         cout << sum << endl;
         
         
