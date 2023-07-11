@@ -29,7 +29,7 @@ int main()
         
         for (int i = 0; i < n; i++)
         {
-
+ 
             int a, b;
             cin >> a >> b;
             if (a>b)  cnt++;
