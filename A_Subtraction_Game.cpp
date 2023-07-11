@@ -33,3 +33,23 @@ int main()
      
     return 0;
 }
+
+/*
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {            // Ant_Man (Legend Nirjhor vai) //
+  int t;
+  cin >> t;
+  while (t--) {
+    int a, b;
+    cin >> a >> b;
+    cout << a + b << '\n';
+  }
+  return 0;
+}
+
+
+*/
