@@ -31,6 +31,6 @@ int main()
         else if(c+b>=10) cout << "YES\n";
         else cout << "NO\n"; 
     }
-     
+      
     return 0;
 }
