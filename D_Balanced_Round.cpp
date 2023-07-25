@@ -45,7 +45,7 @@ int main()
                 mx = max(cnt,mx);
             }
             else cnt = 1;
-        }
+        } 
 
         if(n==1) cout << 0 << endl;
         else cout << n-mx << endl;
