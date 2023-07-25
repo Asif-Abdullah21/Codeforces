@@ -38,7 +38,7 @@ int main()
                 ans = i;
             }
         }
-
+ 
         cout << ans << endl;
          
 
