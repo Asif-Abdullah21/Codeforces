@@ -20,7 +20,7 @@ int main()
     FIO;
     int t;
     cin >> t;
-
+ 
     while (t--)
     {
         char s[10][10];
