@@ -18,14 +18,15 @@ using namespace std;
 int main()
 {
     FIO;
-    string s;   // from Tasir vai and Rifat Vai's code //
+    string s;   //idea from Tasir vai and Rifat Vai's code //
     cin >> s;
+    
     int len = s.size();
     int cnt=0;
-    
-    while(len>1)
+
+    while (len>1)
     {
-        ll sum =0;
+        ll sum = 0;
         for (int i = 0; i < s.size(); i++)
         {
             sum += (s[i]-'0');
@@ -38,6 +39,7 @@ int main()
     }
 
     cout << cnt << endl;
+    
     
     return 0;
 }
