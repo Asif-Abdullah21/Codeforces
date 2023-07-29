@@ -77,8 +77,8 @@ int main()
             st.push(str[i]);
         }
         else{
-            if(!st.empty()){
-                st.pop();
+            if(!st.empty()){ //empty na thaka mane ( ase
+                st.pop();   
                 cnt += 2;
             }
         }
