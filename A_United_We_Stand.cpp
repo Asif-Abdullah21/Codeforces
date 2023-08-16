@@ -53,7 +53,7 @@ int main()
             {
                 cout << a[i] << " ";
                 temp++;
-            }
+            } 
 
             cout << endl;
             
