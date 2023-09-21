@@ -33,8 +33,8 @@ int main()
             if(s[i]=='1' && three==0) cout << 13 << endl;
             else if(s[i]=='1' && three!=0) cout << 31 << endl;
         }
-         
-    }
+     
+    } 
      
     return 0;
 }
