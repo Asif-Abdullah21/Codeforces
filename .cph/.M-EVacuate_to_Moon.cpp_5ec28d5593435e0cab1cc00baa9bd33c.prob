@@ -1,0 +1,1 @@
+{"name":"Local: M-EVacuate_to_Moon","url":"e:\\CF\\M-EVacuate_to_Moon.cpp","tests":[{"id":1698084518375,"input":"3\n1 2 2\n100\n20 40\n2 1 2\n10 20\n11\n3 2 1\n30 30 30\n40 20","output":"80\n20\n50"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CF\\M-EVacuate_to_Moon.cpp","group":"local","local":true}
